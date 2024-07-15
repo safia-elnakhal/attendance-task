@@ -16,15 +16,15 @@
 
                     <table class="table ">
                         <thead  class="head-style">
-                                <th class="col-6">Name</th>
-                                <th class="col-6">Total Amount</th>
-                                <!-- <th class="col-4">More details</th> -->
+                                <th class="col-4">Name</th>
+                                <th class="col-4">Total Amount</th>
+                                <th class="col-4">More details</th>
                         </thead>
                         <tbody>
                             <tr *ngFor="let item of customersAndTransactions">
                                 <td >{{item.name}}</td>
                                 <td >{{item.totalAmount}}</td>
-                                <!-- <td> <button class="px-3" (click)="chartPerCustomer()">View</button> </td> -->
+                                <td> <button class="px-3" (click)="chartPerCustomer()">View</button> </td>
                               </tr>
                         </tbody>
                     </table>

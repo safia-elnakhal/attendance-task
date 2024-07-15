@@ -115,43 +115,43 @@ export class CustomersComponent {
       }
     });
   }
-  // chartPerCustomer(){
-  //   this.customerChart()
-  // }
+  chartPerCustomer(){
+    this.customerChart()
+  }
 
-  // customerChart() {
-  //   const customerNames = this.customersAndTransactions.map(c => c.name);
-  //   const transactionAmounts = this.customersAndTransactions.map(c => c.amount);
-  //   const transactionPerDay= this.customersAndTransactions.map(c => c.date);
+  customerChart() {
+    // const customerNames = this.customersAndTransactions.map(c => c.name);
+    // const transactionAmounts = this.customersAndTransactions.map(c => c.amount);
+    // const transactionPerDay= this.customersAndTransactions.map(c => c.date);
 
-  //   if (this.newChart) {
-  //     this.newChart.destroy();
-  //   }
+    // if (this.newChart) {
+    //   this.newChart.destroy();
+    // }
 
-  //   this.newChart = new Chart('customerChartPerDay', {
-  //     type: 'bar',
-  //     data: {
-  //       labels: transactionPerDay ,
-  //       datasets: [{
-  //         label: ' Amount per Day',
-  //         data: transactionAmounts,
-  //         backgroundColor: 'rgba(103, 151, 219, 0.5)',
-  //         borderColor: 'rgba(103, 151, 219, 1)',
-  //         borderWidth: 1,
-  //         // fill: true
-  //       }]
-  //     },
-  //     options: {
-  //       scales: {
-  //         y: {
-  //           beginAtZero: true
-  //         }
-  //       },
-  //       responsive: true,
+    // this.newChart = new Chart('customerChartPerDay', {
+    //   type: 'bar',
+    //   data: {
+    //     labels: transactionPerDay ,
+    //     datasets: [{
+    //       label: ' Amount per Day',
+    //       data: transactionAmounts,
+    //       backgroundColor: 'rgba(103, 151, 219, 0.5)',
+    //       borderColor: 'rgba(103, 151, 219, 1)',
+    //       borderWidth: 1,
+    //       // fill: true
+    //     }]
+    //   },
+    //   options: {
+    //     scales: {
+    //       y: {
+    //         beginAtZero: true
+    //       }
+    //     },
+    //     responsive: true,
   
-  //     }
-  //   });
-  // }
+    //   }
+    // });
+  }
 
 
 
