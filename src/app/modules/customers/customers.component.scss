@@ -1,0 +1,31 @@
+h1,h3{
+    color: rgb(24, 74, 118);
+}
+
+.row1:hover{
+    background-color: rgba(97, 132, 178, 0.444);
+    color: rgb(9, 39, 79);
+}
+.col-style{
+    background-color: rgba(97, 132, 178, 0.444);
+    border-radius: 10px;
+}
+
+  tr ,td{
+    background-color: rgba(97, 132, 178, 0.444) !important;
+
+
+ }   
+    th{
+       
+        color: rgb(24, 74, 118);
+        padding: 10px 5px;
+
+    }
+
+button{
+    border: none; 
+    background-color: rgb(9, 39, 79);
+    color: white;
+    border-radius:5px ;
+}

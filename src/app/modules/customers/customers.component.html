@@ -1,0 +1,60 @@
+<section class="customers">
+    <div class="container">
+        <div class="row border rounded-3 my-5 py-4  row1">
+            <div class="col-md-12">
+                    <h1 class="">Customers</h1>
+                </div>
+                </div>
+  
+  
+              
+        <div class="row" *ngIf="customersAndTransactions.length>0">
+            <div class="col-md-12 col-style ">
+
+                <input matInput class="form-control w-100 mb-3 mt-3" placeholder="Please write Name" 
+                type="text" [(ngModel)]="searchKey" (keyup.enter)="onGetCustomersData()"  (keyup.escape)="onGetCustomersData()">
+
+                    <table class="table ">
+                        <thead  class="head-style">
+                                <th class="col-6">Name</th>
+                                <th class="col-6">Total Amount</th>
+                                <!-- <th class="col-4">More details</th> -->
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of customersAndTransactions">
+                                <td >{{item.name}}</td>
+                                <td >{{item.totalAmount}}</td>
+                                <!-- <td> <button class="px-3" (click)="chartPerCustomer()">View</button> </td> -->
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+        </div>
+        <div class="no-data" *ngIf="customersAndTransactions.length==0">
+                      <img src="../../../assets/no-data.avif" alt="">
+        </div>
+        </div>
+         <div class="d-flex justify-content-center align-items-center">
+
+            <div id="chartUser" class="bg-white w-75 my-5  shadow-sm chart border p-5 mb-3  rounded-3">
+                 <h3 class="text-center">Total Transaction Amount for customers </h3>
+                <canvas id="customerChart"></canvas>
+                </div>
+
+         </div>
+         <!-- <div class="d-flex justify-content-center align-items-center">
+
+            <div id="chartUser" class="bg-white w-75 my-5  shadow-sm chart border p-5 mb-3  rounded-3">
+                 <h3 class="text-center"> Amount Per Day Selected  Customers </h3>
+                <canvas id="customerChartPerDay"></canvas>
+                </div>
+
+         </div> -->
+        
+        
+      
+
+</section>
